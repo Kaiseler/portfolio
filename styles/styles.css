@@ -1,0 +1,44 @@
+:root {
+  --deepBlack: #151515;
+  --waterGreen: #4EE1A0;
+  --darkGrey: #242424;
+  --lightGrey: #D9D9D9;
+  --white: #FFF;
+}
+
+/*
+Tipografia 
+                    Font family, Font size, space between char
+ Heading XL (H1) - Space Grotesk Bold, 88px, espaçamento entre caracteres: -2.5px ;
+ Heading L(h2) - Space Grotesk Bold, de 48 a 56px, espacemento entre caracteres: -1.5px;
+ Heading M (h3)- Space Grotesk Bold, 24 a 32px.
+ Body(o resto dos textos)- Space GrotestBold , de 18/28.
+ */
+
+ /* Font esta na pasta /assets/fonts */
+ @font-face {
+  font-family: 'Space Grotesk';
+  src: url(/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+ }
+
+/* All rule  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ body {
+  background-color: var(--deepBlack);
+  font-family: 'Space Grotesk';
+ }
+
+ .container-navigation {
+  display: flex;
+  flex-direction: column;
+  
+ }
+ 
+
+
