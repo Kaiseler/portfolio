@@ -1,9 +1,9 @@
 :root {
-  --deepBlack: #151515;
-  --waterGreen: #4EE1A0;
-  --darkGrey: #242424;
-  --lightGrey: #D9D9D9;
-  --white: #FFF;
+    --deepBlack: #151515;
+    --waterGreen: #4ee1a0;
+    --darkGrey: #242424;
+    --lightGrey: #d9d9d9;
+    --white: #fff;
 }
 
 /*
@@ -15,30 +15,184 @@ Tipografia
  Body(o resto dos textos)- Space GrotestBold , de 18/28.
  */
 
- /* Font esta na pasta /assets/fonts */
- @font-face {
-  font-family: 'Space Grotesk';
-  src: url(/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
- }
+/* Font esta na pasta /assets/fonts */
+@font-face {
+    font-family: "Space Grotesk";
+    src: url(/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf);
+}
 
 /* All rule  */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
- body {
-  background-color: var(--deepBlack);
-  font-family: 'Space Grotesk';
- }
+body {
+    background-color: var(--deepBlack);
+    font-family: "Space Grotesk";
+    color: var(--white);
+}
 
- .container-navigation {
-  display: flex;
-  flex-direction: column;
-  
- }
- 
+.header__logo {
+    margin: 0 auto 40px auto;
+    border: 2px solid red;
+    height: 383px;
+    width: 46.66666666666667%;
+    background-image: url(../assets/images/image-profile-mobile.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
 
+.header__logo {
+    margin-bottom: 20px;
+    line-height: 32px;
+}
 
+.header__logo p {
+    margin-bottom: 20px;
+    line-height: 32px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header__nav {
+    width: 100%;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+}
+
+.nav__list li {
+    list-style: none;
+}
+
+/* Paragrado e H1 do footer e botao */
+.header__intro {
+    text-align: center;
+    height: 244px;
+    width: 91.46666666666667%;
+    margin: 0 auto;
+}
+
+.header__intro h1 {
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.14px;
+}
+
+.intro__line {
+    width: 60%;
+    height: 4px;
+    background-color: var(--waterGreen);
+    position: absolute;
+    right: 48px;
+    border: none;
+}
+
+.header__intro p {
+    line-height: 26px;
+    font-weight: 200;
+    text-align: center;
+    margin: 20px auto 0;
+    height: auto;
+}
+
+.intro__button {
+    width: 36%;
+    margin: 24px auto 0;
+    /* border: 2px solid red; */
+}
+.intro__button a {
+    line-height: 26px;
+    letter-spacing: 2.29px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--white);
+}
+.button__line {
+    margin-top: 10px;
+    height: 2px;
+    background-color: var(--waterGreen);
+    border: none;
+}
+
+/* Main */
+
+.container-skills {
+    width: 91.46666666666667%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 12.12846598843008%;
+    margin: 80px auto 0px;
+    gap: 24px;
+    border-top: 1px solid var(--lightGrey);
+    border-bottom: 1px solid var(--lightGrey);
+    padding: 40px 0px;
+}
+.container-skills__card {
+    width: 100%;
+    text-align: center;
+    font-weight: 200;
+}
+
+.container-skills__card h2 {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -1px;
+}
+
+/* Section Projectos */
+
+.container-projects {
+    display: grid;
+    width: 91.46666666666667%;
+    border: 1px solid red;
+    margin: 80px auto 0px;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(6, 100%);
+    grid-template-areas: "img" "img" "img" "img" "img" "img" "text" "text" "text" "text" "text" "text";
+    max-width: 100%;
+}
+
+.container-projects__project img {
+    object-fit: contain;
+    max-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* FAzer pergunta sobre uma classe so para o formato de texto ou por directamente na classe */
+.project__name-skills {
+    width: 62.09912536443149%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    white-space: nowrap;
+}
+
+.name-skills__skill {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    margin-top: 7px;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--lightGrey);
+}
+
+.name-skills__links a {
+    text-decoration: none;
+    color: var(--waterGreen);
+
+}
