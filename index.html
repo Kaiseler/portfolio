@@ -12,6 +12,8 @@
     href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet"
     href="./styles/styles.css">
+  <!-- <link rel="stylesheet"
+    href="./styles/reset.css "> -->
   <title>Frontend Mentor | Single-page developer portfolio</title>
 </head>
 
@@ -53,107 +55,148 @@
     </div>
   </header>
   <main>
-    <div class="container-skills">
-      <div class="container-skills__card">
+    <div class="skills">
+      <div class="skills__card">
         <h2>HTML</h2>
         <p>1 year experience</p>
       </div>
-      <div class="container-skills__card">
+      <div class="skills__card">
         <h2>CSS</h2>
         <p>1 year experience</p>
       </div>
-      <div class="container-skills__card">
+      <div class="skills__card">
         <h2>JavaScript</h2>
         <p>1 year experience</p>
       </div>
     </div>
   </main>
 
-  <section>
-    <div class="container-projects__title">
+  <section class="section">
+    <div class="projects__title">
       <h2>Projects</h2>
       <a href="">CONTACT ME</a>
     </div>
-    <div class="container-projects">
-
-      <div class="container-projects__project">
+    <!-- Div Projects container principal dos projectos -->
+    <div class="projects">
+      <!-- Div de cada projecto projecto 1 -->
+      <div class="projects__project">
         <img src="./assets/images/thumbnail-project-1-small.webp"
           alt="">
-        <div class="project__name-skills">
+        <div class="project__skills">
           <h3>DESIGN PORTFOLIO</h3>
-          <div class="name-skills__skill">
+          <div class="skills__skill">
             <p>HTML</p>
             <p>CSS</p>
           </div>
+          <div class="skills__links">
+            <a href="">VIEW PROJECT</a>
+            <a href="">VIEW CODE</a>
+          </div>
         </div>
-        <div class="name-skills__links">
-          <a href="">VIEW PROJECT</a>
-          <a href="">VIEW CODE</a>
+      </div>
+      <!-- projecto 2 -->
+      <div class="projects__project">
+        <img src="./assets/images/thumbnail-project-1-small.webp"
+          alt="">
+        <div class="project__skills">
+          <h3>DESIGN PORTFOLIO</h3>
+          <div class="skills__skill">
+            <p>HTML</p>
+            <p>CSS</p>
+          </div>
+          <div class="skills__links">
+            <a href="">VIEW PROJECT</a>
+            <a href="">VIEW CODE</a>
+          </div>
+        </div>
+      </div>
+      <!-- Projecto 3 -->
+      <div class="projects__project">
+        <img src="./assets/images/thumbnail-project-1-small.webp"
+          alt="">
+        <div class="project__skills">
+          <h3>DESIGN PORTFOLIO</h3>
+          <div class="skills__skill">
+            <p>HTML</p>
+            <p>CSS</p>
+          </div>
+          <div class="skills__links">
+            <a href="">VIEW PROJECT</a>
+            <a href="">VIEW CODE</a>
+          </div>
+        </div>
+      </div>
+      <!-- projecto 4 -->
+      <div class="projects__project">
+        <img src="./assets/images/thumbnail-project-1-small.webp"
+          alt="">
+        <div class="project__skills">
+          <h3>DESIGN PORTFOLIO</h3>
+          <div class="skills__skill">
+            <p>HTML</p>
+            <p>CSS</p>
+          </div>
+          <div class="skills__links">
+            <a href="">VIEW PROJECT</a>
+            <a href="">VIEW CODE</a>
+          </div>
+        </div>
+      </div>
+      <!-- projecto 5 -->
+      <div class="projects__project">
+        <img src="./assets/images/thumbnail-project-1-small.webp"
+          alt="">
+        <div class="project__skills">
+          <h3>DESIGN PORTFOLIO</h3>
+          <div class="skills__skill">
+            <p>HTML</p>
+            <p>CSS</p>
+          </div>
+          <div class="skills__links">
+            <a href="">VIEW PROJECT</a>
+            <a href="">VIEW CODE</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects__project">
+        <img src="./assets/images/thumbnail-project-1-small.webp"
+          alt="">
+        <div class="project__skills">
+          <h3>DESIGN PORTFOLIO</h3>
+          <div class="skills__skill">
+            <p>HTML</p>
+            <p>CSS</p>
+          </div>
+          <div class="skills__links">
+            <a href="">VIEW PROJECT</a>
+            <a href="">VIEW CODE</a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="container-projects__project">
-      <h3>E-LEARNING LANDING PAGE</h3>
-      <p>HTML</p>
-      <p>CSS</p>
-      <a href="">VIEW PROJECT</a>
-      <a href="">VIEW CODE</a>
-    </div>
-    <div class="container-projects__project">
-      <h3>TODO WEB APP</h3>
-      <p>HTML</p>
-      <p>CSS</p>
-      <P>JAVASCRIPT</P>
-      <a href="">VIEW PROJECT</a>
-      <a href="">VIEW CODE</a>
-    </div>
-    <div class="container-projects__project">
-      <h3>ENTERTAINMENT WEB APP</h3>
-      <p>HTML</p>
-      <p>CSS</p>
-      <P>JAVASCRIPT</P>
-      <a href="">VIEW PROJECT</a>
-      <a href="">VIEW CODE</a>
-    </div>
-    <div class="container-projects__project">
-      <h3>MEMORY GAME</h3>
-      <p>HTML</p>
-      <p>CSS</p>
-      <P>JAVASCRIPT</P>
-      <a href="">VIEW PROJECT</a>
-      <a href="">VIEW CODE</a>
-    </div>
-    <div class="container-projects__project">
-      <h3>ART GALLERY SHOWCASE</h3>
-      <p>HTML</p>
-      <p>CSS</p>
-      <P>JAVASCRIPT</P>
-      <a href="">VIEW PROJECT</a>
-      <a href="">VIEW CODE</a>
-    </div>
-    </div>
   </section>
-  <footer>
+  <footer class="footer">
     <h2>Contact</h2>
     <p>I would love to hear about your project and how i could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
-    <form method="post">
-
+    <form method="post" class="footer-form">
       <input type="text"
         id="name"
         name="name"
-        placeholder="name"
+        placeholder="Name"
         autocomplete="name">
       <input type="email"
         id="email"
         name="email"
         placeholder="Email">
+
       <textarea id="message"
         name="message"
         placeholder="Message"></textarea>
-      <button>SEND MESSAGE</button>
+      <button id="button-send">SEND MESSAGE</button>
     </form>
     <p>Luis Kaiseler</p>
-    <nav class="container-navigation">
+    <nav class="navigation">
       <ul class="container-navigation navbar">
         <li><a href="https://github.com/"><img src="./assets/images/icon-github.svg"
               alt="logo github"></a></li>
@@ -164,8 +207,7 @@
         <li><a href="https://x.com/home/"><img src="./assets/images/icon-twitter.svg"
               alt="logo twitter"></a></li>
       </ul>
-      <img src=""
-        alt="">
+    
     </nav>
   </footer>
 
