@@ -36,12 +36,14 @@ body {
     color: var(--white);
 }
 
+.break-lines {
+    display: none;
+}
 .header {
     display: flex;
     flex-direction: column;
     align-items: center;
     /* position: relative; */
-    overflow-x: hidden;
 }
 
 .header__logo {
@@ -49,7 +51,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
 }
 
 .header__img {
@@ -69,9 +70,9 @@ body {
 }
 #top-circle {
     position: absolute;
-    bottom: 0px;
+    top: 0;
     /* background-color: purple; */
-    z-index: 1 !important;
+    z-index: 1;
     right: -64px;
 }
 
@@ -160,6 +161,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 12.12846598843008%;
     margin: 80px auto 0px;
     gap: 24px;
@@ -196,7 +198,6 @@ body {
     align-items: flex-end;
     margin-bottom: 40px;
     margin: 80px 16px 40px;
-
     width: 343px;
 }
 .projects__project {
@@ -265,7 +266,7 @@ body {
 
 .contact {
     margin-top: 80px;
-    padding: 60px 16px 39px;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -310,6 +311,7 @@ body {
     outline: none;
     border-bottom: 1px solid var(--white);
     box-shadow: none;
+    color: var(--white);
 }
 
 .contact-form input::placeholder {
@@ -321,10 +323,10 @@ body {
     background-color: transparent;
     outline: none;
     border: none;
-    padding: 0 0 81px 24px;
+    color: var(--white);
     box-shadow: none;
     font-size: 16px;
-
+    resize: none;
     border-bottom: 1px solid var(--white);
     height: 107px;
     overflow-y: hidden;
@@ -333,6 +335,7 @@ body {
 .contact-form textarea::placeholder {
     line-height: 36px;
     letter-spacing: -0.22px;
+    padding: 0 0 0px 24px;
 }
 
 .form-button {
@@ -378,16 +381,23 @@ body {
 }
 
 @media (min-width: 768px) {
+    .break-lines {
+        display: block;
+    }
+
     .header {
         flex-direction: row-reverse;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 600px;
+        position: relative;
     }
     .header__logo {
         width: 50%;
+        /* border: 2px solid red; */
     }
+
     .header__img {
         height: 600px;
         width: 100%;
@@ -395,6 +405,7 @@ body {
         background-position: center;
         background-size: cover;
         z-index: -1;
+        position: relative;
     }
     .header__nav {
         width: 92%;
@@ -403,27 +414,35 @@ body {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin: 30px;
-        background-color: aqua;
-        
+        margin: 30px 30px 0 30px;
     }
 
     .nav__list {
         margin-top: 0;
     }
+
     .header__intro {
         width: 445px;
-        gap: 60px;
-        align-items: flex-start;
-        margin: 90px 0 0 32px;
+        height: 449px;
+        /* background-color: purple; */
         text-align: left;
-        border: 2px solid green;
+        margin: 151px 0px 0px 0px;
     }
 
     .intro__title {
-        height: 233px;
-        width: 433px;
+        width: 450px;
+        text-align: justify;
+        position: relative;
+    }
+    .intro__title h1 {
+        font-size: 72px;
+        line-height: 72px;
+        letter-spacing: -2.05px;
         position: absolute;
+        top: 0;
+        left: 32px;
+        /* z-index: 1; */
+        width: 443px;
     }
 
     .intro__descr {
@@ -431,12 +450,124 @@ body {
         color: var(--lightGrey);
         position: absolute;
         width: 445px;
-        bottom: 0;
-        line-height: 28px;
+        bottom: 15px;
+        /* background-color: purple; */
+        left: 32px;
     }
 
     .intro__descr p {
         text-align: left;
-        
+        line-height: 28px;
+        font-weight: 400;
+        width: 100%;
+        height: 84px;
     }
+
+    .skills {
+        display: grid;
+        grid-template-rows: repeat(2, 98px);
+        grid-template-columns: repeat(2, 345px);
+        grid-gap: 52px 7px;
+        margin: 59px 0px 100px 32px;
+        border-bottom: none;
+    }
+
+    .skills__card {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        /* border: 1px solid red; */
+    }
+
+    .projects__title {
+        width: 91.93%;
+        height: 72px;
+        /* background-color: purple; */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .projects__title h2 {
+        font-size: 72px;
+        font-weight: bold;
+        line-height: 72px;
+    }
+
+    .projects__title a {
+        line-height: 26px;
+        letter-spacing: 2.29px;
+        padding-bottom: 10px;
+    }
+
+    .section-projects {
+        width: 92.2%;
+        display: grid;
+        grid-template-columns: 342px 342px;
+        grid-template-rows: 398px;
+        grid-gap: 60px 24px;
+    }
+.contact {
+    height: 755px;
 }
+
+    .contact-form {
+        width: 445px;
+        height: 327px;
+        border: none;
+        margin-bottom: 92px;
+    }
+
+    .contact h2 {
+        font-size: 72px;
+        line-height: 72px;
+        letter-spacing: -2.05px;
+        margin: 60px 20px;
+    }
+
+    .contact p {
+        max-width: 445px;
+        height: 84px;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+        text-align: center;
+    }
+
+    .contact-form input {
+        width: 445px;
+        height: 43px;
+    }
+
+    #button-send {
+        background-color: transparent;
+        color: var(--white);
+        border-bottom: 2px solid var(--waterGreen);
+        width: auto;
+        line-height: 26px;
+        letter-spacing: 2.29px;
+        font-weight: bold;
+        font-family: "Space Grotesk";
+         margin: 32px 0 92px;
+    }
+
+    /* Caixa do Footer */
+    .footer {
+        
+        
+       padding: 0 0 40px 0;
+       justify-content: center;
+      
+
+    }
+    .footer__logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 92.3%;
+        height: 63px;
+        border-top: 1px solid var(--lightGrey);
+        
+       
+    }
+
