@@ -11,6 +11,11 @@ Google Fonts - Fontes personalizadas
 Git - Controle de versão
 GitHub - Hospedagem do código
 
+# 📦 Implantação
+Aqui está uma captura de tela do projeto em funcionamento:
+![Design preview for the Single-page developer portfolio coding challenge](./preview.jpg)
+O projeto está em funcionamento no link seguinte: 
+
 # 🖇️ Colaborando
 Se você quiser contribuir com este projeto, por favor, leia o arquivo COLABORACAO.md para obter detalhes sobre o processo de envio de pull requests.
 
