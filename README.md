@@ -20,8 +20,8 @@ O projeto está em funcionamento no link seguinte:
 Se você quiser contribuir com este projeto, por favor, leia o arquivo COLABORACAO.md para obter detalhes sobre o processo de envio de pull requests.
 
 # ✒️ Autores
-- Seu Nome - Trabalho Inicial - seuusuario
-Você também pode ver a lista completa de colaboradores que participaram deste projeto.
+- Seu Nome - seuusuario
+- Você também pode ver a lista completa de colaboradores que participaram deste projeto.
 
 # 📄 Licença
 Este projeto está sob a licença [Nome da Licença] - veja o arquivo LICENSE.md para detalhes.
