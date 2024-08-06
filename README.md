@@ -4,12 +4,12 @@ Este é um projeto de portfólio de página única desenvolvido com a abordagem 
 # 🛠️ Construído com
 Ferramentas e tecnologias utilizadas para desenvolver o projeto:
 
-HTML5 - Estruturação do conteúdo
-CSS3 - Estilização e layout responsivo
-JavaScript - Interações dinâmicas
-Google Fonts - Fontes personalizadas
-Git - Controle de versão
-GitHub - Hospedagem do código
+- HTML5 - Estruturação do conteúdo
+- CSS3 - Estilização e layout responsivo
+- JavaScript - Interações dinâmicas
+- Google Fonts - Fontes personalizadas
+- Git - Controle de versão
+- GitHub - Hospedagem do código
 
 # 📦 Implantação
 Aqui está uma captura de tela do projeto em funcionamento:
